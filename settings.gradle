@@ -1,0 +1,2 @@
+rootProject.name='CurrencyPAL'
+include ':app'
