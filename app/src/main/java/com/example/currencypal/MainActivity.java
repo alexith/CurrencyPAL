@@ -14,11 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
         EditText defaultCurrency = (EditText) findViewById(R.id.defaultCurrency);
 
-        int defaultCurrency = Integer.parseInt(defaultCurrency.getText().toString());
-        int rupee = 75.5;
-        double convertedCurrency = defaultCurrency * rupee;
-
-        Toast.makeText(MainActivity.this, "Currency in rupee: " + Double.toString(convertedCurrency), Toast.LENGTH_LONG).show();
+        Double defaultCurrencyButton = Double.parseDouble(defaultCurrency.getText().toString());
+        Double convertedCurrency = defaultCurrencyButton * 75.5;
+        Toast.makeText(MainActivity.this, "Rupee: " + convertedCurrency, Toast.LENGTH_SHORT).show();
     }
 
     @Override
